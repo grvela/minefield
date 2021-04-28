@@ -98,9 +98,8 @@ void imprime_mat(char M[][N], int n){
     if(n > 9 && i < 9) printf(" %d |", i + 1);
     else printf("%d |", i + 1);
     for(int j = 0; j < n; j++){
-      //if(M[i][j] == '*' && !Q) printf(" ? ");
-      //else 
-      printf(" %c ", M[i][j]); 
+      if(M[i][j] == '*' && !Q) printf(" ? ");
+      else printf(" %c ", M[i][j]); 
     }
     printf("\n");
   }
